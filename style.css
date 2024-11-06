@@ -1,0 +1,28 @@
+#game-container {
+  text-align: center;
+  margin-top: 0; /* 移除顶部边距 */
+  min-height: 100vh; /* 确保容器至少与视口一样高 */
+  position: relative; /* 为背景图片提供定位上下文 */
+}
+
+#game-status {
+  margin-top: 20px;
+  font-size: 20px;
+}将图片缩小，上方留出空隙，修改后的代码
+
+#game-progress {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+#game-background {
+  width: 100%; /* 宽度设置为100% */
+  height: 100%; /* 高度设置为100% *
+  background-size: cover; /* 确保背景图片覆盖整个容器，但不会拉伸 */
+  background-position: center; /* 确保背景图片居中 */
+  background-repeat: no-repeat; /* 确保背景图片不重复 */
+  position: absolute; /* 绝对定位，使其覆盖整个容器 */
+  top: 0; /* 定位到顶部 */
+  left: 0; /* 定位到左侧 */
+  z-index: -1; /* 确保背景图片在文本下方 */
+}
